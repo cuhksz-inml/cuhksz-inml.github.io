@@ -72,7 +72,25 @@
       <div id="factsfigures_banner">
       </div>
       <div style='max-width: 900px; margin: 0 auto;'>
-        <h2>Overview of VR Behavior Dataset</h2>
+        <h2>Gallery of Video Sequences in the Dataset</h2>
+<div>
+  <video style="width:100%" loop muted controls autoplay>
+    <source src="images/dataset_example.mp4" type="video/mp4">
+  </video>
+  <p style="font-size: 12px"><i>The above video contains music. You can click the video to unmute it.</i></p>
+</div>
+<div>
+  <video style="width:100%" loop muted controls autoplay>
+    <source src="images/dataset_example.mp4" type="video/mp4">
+  </video>
+  <p style="font-size: 12px"><i>The above video contains music. You can click the video to unmute it.</i></p>
+</div>
+<div>
+  <video style="width:100%" loop muted controls autoplay>
+    <source src="images/dataset_example.mp4" type="video/mp4">
+  </video>
+  <p style="font-size: 12px"><i>The above video contains music. You can click the video to unmute it.</i></p>
+</div>
 <div>
   <video style="width:100%" loop muted controls autoplay>
     <source src="images/dataset_example.mp4" type="video/mp4">
@@ -80,138 +98,6 @@
   <p style="font-size: 12px"><i>The above video contains music. You can click the video to unmute it.</i></p>
 </div>
 </br>
-<p>The VR Behavior Motion Dataset is a large-scale dataset containing both the head motion, which denotes FoV, and eye gaze information,</p>
-<ul>
-<li>camera motion, video quality, and the dispersion of region of interest (ROI).</li>
-<li>It also contains 180, 000 sequences of head and gaze tracking data, represented as joint rotations along with root trajectories. The motions are equally distributed among 100 users with hundreds of choreographies. Motion frequency is 120Hz. All the videos have corresponding head and gaze tracking data.</li>
-</ul>
-<p>With those annotations, VR behavior is designed to support tasks including:</p>
-<ul>
-<li>Multi-view Human Gaze Estimation.</li>
-<li>Human Gaze and Head Prediction/Generation.</li>
-<li>Cross-modal Analysis.
-<br><br></li>
-</ul>
-<h2>Publications</h2>
-<p style="margin-block-end: 7px;">The following paper describes VR Behavior dataset in depth: from the data processing to detailed statistics about the data. If you use the VR Behavior dataset in your work, please cite this article.</p>
-<table style="border: 0;">
-    <tr>
-      <td width=17% style="border: 0;">
-        <img src="images/paper_teaser.gif">
-      </td>
-      <td width=75% style="border: 0;">
-        <i>Yili Jin*, Junhua Liu*, Fangxin Wang, Shuguang Cui.</i><br>
-        Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study<br>
-        ACM Multimedia, 2022.<br>
-        <a href="https://arxiv.org/abs/2101.08779">[PDF]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a> <a href="https://google.github.io/aichoreographer">[Web]</a>
-      </td>
-  </tr>
-</table>
-<div id="bib_DanceGen" class="bibtex noshow">
-<pre>
-@misc{li2021learn,
-      title={Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study, 
-      author={Yili Jin*, Junhua Liu*, Fangxin Wang, Shuguang Cui},
-      year={2022},
-      eprint={2101.08779},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-</pre>
-</div>
-<p style="margin-top: 19px; margin-block-end: 7px;">Please also consider citing the original <a href="https://aistdancedb.ongaaccel.jp/">Video Database</a> if you find our dataset useful. (<a href="javascript:toggleBibtex('AIST')">[BibTex]</a>)</p>
-<div id="bib_AIST" class="bibtex noshow">
-<pre>
-@inproceedings{aist-dance-db,
-   author    = {Shuhei Tsuchida and Satoru Fukayama and Masahiro Hamasaki and Masataka Goto}, 
-   title     = {VR Behavior Video Database: Multi-genre, Multi-dancer, and Multi-camera Database for Dance Information Processing}, 
-   booktitle = {Proceedings of the 20th International Society for Music Information Retrieval Conference, {ISMIR} 2019},
-   address   = {Delft, Netherlands},
-   pages     = {501--510},
-   year      = 2019, 
-   month     = nov
-}
-</pre>
-</div>
-<h2>Dataset organization</h2>
-<p>The dataset is split into training/validation/testing sets in different ways serving for different purposes.</p>
-<ul>
-<li>For tasks such as human pose estimation and human motion prediction, we recommend using data splits described in Table 1. Here we split the trainval and testing sets based on different <em>subjects</em>, which also makes sure the human motions in the trainval and testing sets have no overlap. Note training and validation sets share the same group of subjects.</li>
-<li>For tasks dealing with motion and music such as music conditioned motion generation, we recommend using data splits described in Table 2. In the AIST database, same music and same choreography are shared by multiple human motion sequences. So we carefully split the dataset to make sure that the music and choreography in the training set does not overlap with that in the testing/validation set. Note validation and testing sets share the same group of music but different choreographies.</li>
-</ul>
-<p align='center'>Table 1: Data Splits based on Subjects.</p>
-<table>
-<thead>
-<tr>
-<th><div style="width:100px"></div></th>
-<th align="right">Train</th>
-<th align="right">Validation</th>
-<th align="right">Test</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Images</td>
-<td align="right">6,420,059</td>
-<td align="right">508,234</td>
-<td align="right">3,179,722</td>
-</tr>
-<tr>
-<td>Sequences</td>
-<td align="right">868</td>
-<td align="right">70</td>
-<td align="right">470</td>
-</tr>
-<tr>
-<td>Subjects</td>
-<td align="right">20*</td>
-<td align="right">20*</td>
-<td align="right">10</td>
-</tr>
-</tbody>
-</table>
-<p align='center'>Table 2: Data Splits based on Music-Choreography.</p>
-<table>
-<thead>
-<tr>
-<th><div style="width:100px"></div></th>
-<th align="right">Train</th>
-<th align="right">Validation</th>
-<th align="right">Test</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Seconds</td>
-<td align="right">13,963.6</td>
-<td align="right">187.6</td>
-<td align="right">187.6</td>
-</tr>
-<tr>
-<td>Sequences</td>
-<td align="right">980</td>
-<td align="right">20</td>
-<td align="right">20</td>
-</tr>
-<tr>
-<td>Choreographies</td>
-<td align="right">420</td>
-<td align="right">20</td>
-<td align="right">20</td>
-</tr>
-<tr>
-<td>Music</td>
-<td align="right">50</td>
-<td align="right">10*</td>
-<td align="right">10*</td>
-</tr>
-</tbody>
-</table>
-<p>*splits have shared data across this field.</p>
-<h2>Licenses</h2>
-<p>The annotations are licensed by Google LLC under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license.</p>
 
-      </div>
-    </div>
   </body>
 </html>
