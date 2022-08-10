@@ -78,17 +78,17 @@
     <source src="images/dataset_example.mp4" type="video/mp4">
   </video>
   <p style="font-size: 12px"><i>Sample video sequence themed Spotlight stories. The above video contains music. You can click the video to unmute it.</i></p>
-</div>s
+</div>
 </br>
-<p>The Head and Gaze VR Behavior Motion Dataset is a large-scale dataset containing both the head motion, which denotes FoV, and eye gaze information.</p>
+<p>The Head and Gaze VR Behavior Dataset is a large-scale dataset containing both the head motion and eye gaze information.</p>
 <ul>
-<li>It contains 180, 000 sequences of head and gaze tracking data, represented as coordinate and quaternion along with corresponding images.</li>
-<li>The data sequences are captured among 100 users with high sampling frequency 120Hz. </li>
-<li>It provides 27 videos with 9 dimensions, which contains three technique metrics: camera motion, video quality, and the dispersion of region of interest (ROI).</li>
+<li>It contains nearly 20 million pieces of head and gaze tracking data, represented as coordinate and quaternion along with corresponding images.</li>
+<li>The data sequences are captured among 100 users with a high sampling frequency 120Hz. </li>
+<li>It provides 27 videos, which have a rich diversity based on three technique metrics: camera motion, video quality, and the dispersion of region of interest (ROI).</li>
 </ul>
-<p>With those annotations, VR behavior is designed to support tasks including:</p>
+<p>Our dataset can support many tasks in 360° videos, for example:</p>
 <ul>
-<li>360-degree Video Streaming</li>
+<li>360° Video Streaming</li>
 <li>User Identification</li>
 <li>Psycho Analysis</li>
 <li>Video Recommdentation</li>
@@ -109,33 +109,29 @@
         <i>Yili Jin*, Junhua Liu*, Fangxin Wang, Shuguang Cui.</i><br>
         Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study<br>
         ACM Multimedia, 2022.<br>
-        <a href="https://arxiv.org/abs/2101.08779">[PDF]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a> <a href="https://google.github.io/aichoreographer">[Web]</a>
+        <a href="https://arxiv.org/abs/2208.04079">[Arxiv]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a>
       </td>
   </tr>
 </table>
 <div id="bib_DanceGen" class="bibtex noshow">
 <pre>
-@misc{li2021learn,
-      title={Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study, 
-      author={Yili Jin*, Junhua Liu*, Fangxin Wang, Shuguang Cui},
-      year={2022},
-      eprint={2101.08779},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{vrdataset,
+  author = {Yili Jin and Junhua Liu and Fangxin Wang and Shuguang Cui},
+  title = {Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study},
+  booktitle = {{MM} '22: Proceedings of the 30th ACM International Conference on Multimedia, Lisboa, Portugal, October 10 - 14, 2022},
+  publisher = {{ACM}},
+  year = {2022},
+  doi = {10.1145/3503161.3548200}
 }
 </pre>
 </div>
 
-<h2>Dataset organization</h2>
-<p>The 27 videos in the dataset are split into 9 dimensions.</p>
+<h2>Videos</h2>
+<p>We collect videos from YouTube, and the following table shows the URL and content of the videos, where the full URL is the concatenation of "www.youtu.be/" and the string listed in the table.</p>
 <ul>
 </ul>
 <img src="table1.png">
 <p align='center'>Table 2: Information of videos</p>
-
-
-<h2>Licenses</h2>
-<p>The annotations are licensed by Google LLC under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license.</p>
 
       </div>
     </div>
