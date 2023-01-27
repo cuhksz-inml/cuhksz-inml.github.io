@@ -46,7 +46,7 @@
         }
       </script>
     <div class="topnav" id="myTopnav">
-      <a id="100" href="index.html" class="title">VR behavior Dataset</a>
+      <a id="100" href="index.html" class="title">FNii-DVVD - Daily Scenario Volumetric Video Dataset</a>
 <!-- <div id="challenge" class="menu-dropdown">
 <a href="challenge_overview.html" class="droplink">Challenge</a>
 <div class="menu-dropdown-content" style="right:0px;">
@@ -72,44 +72,47 @@
       <div id="factsfigures_banner">
       </div>
       <div style='max-width: 900px; margin: 0 auto;'>
-        <h2>Overview of VR Behavior Dataset</h2>
+        <h2>Overview of Daily Scenario Volumetric Video Dataset </h2>
 <div>
-  <video style="width:100%" loop muted controls autoplay>
-    <source src="images/dataset_example.mp4" type="video/mp4">
-  </video>
-  <p style="font-size: 12px"><i>Sample video sequence themed Spotlight stories. The above video contains music. You can click the video to unmute it.</i></p>
+  <img src="cover.png"/>
+  <p style="font-size: 12px"><i>Figure 1: Sample frames of the released dataset sequence.</i></p>
 </div>
 </br>
-<p>The Head and Gaze VR Behavior Dataset is a large-scale dataset containing both the head motion and eye gaze information.</p>
+<p>The Daily Scenario Volumetric Video Dataset is the first dataset of volumetric videos depicting the interaction of people in real-life scenarios with external envirnments.</p>
 <ul>
-<li>It contains nearly 20 million pieces of head and gaze tracking data, represented as coordinate and quaternion along with corresponding images.</li>
-<li>The data sequences are captured among 100 users with a high sampling frequency 120Hz. </li>
-<li>It provides 27 videos, which have a rich diversity based on three technique metrics: camera motion, video quality, and the dispersion of region of interest (ROI).</li>
+<li>It contains 100GB+ of volumetric video data, added up to 0.7 million frames.</li>
+<li>The data sequences are captured using 4 RGBD cameras and has been finely post-processed. </li>
+<li>The dataset has a rich diversity of human-human and human-scene interactions under 4 dimensions.</li>
 </ul>
-<p>Our dataset can support many tasks in 360° videos, for example:</p>
+<p>Our dataset can support many research tasks in volumetric video compression, streaming and other areas, for example:</p>
 <ul>
-<li>360° Video Streaming</li>
-<li>User Identification</li>
-<li>Psycho Analysis</li>
-<li>Video Recommdentation</li>
+<li>Virtual & Augmented Reality</li>
+<li>Social Interaction</li>
+<li>Healthcare</li>
+<li>AI Systems</li>
 </ul>
 
 <h2>Other Dataset</h2>
-<p style="margin-block-end: 7px;">Here are disparities between our dataset and exist several datasets that provide head movement tracks of users. <br> Our dataset outperforms on the length of dataset, number of participants and frequency. <br> Our dataset have both head and gaze data and more abundent diversity of contents.</p>
-<img src="table2.png">
+<p style="margin-block-end: 7px;">Here are disparities between our dataset and exist several datasets that provide head movement tracks of users. 
+  <br> Our dataset is the first that contains surrounding environment and human-environment interaction.
+<img src="compare.png">
 <p align='center'>Table 1: Existing datasets.</p>
+
+
 <h2>Publications</h2>
-<p style="margin-block-end: 7px;">The following paper describes VR Behavior dataset in depth: from the data processing to detailed statistics about the data. If you use the VR Behavior dataset in your work, please cite this article.</p>
+<p style="margin-block-end: 7px;">The following paper describes in depth: from the data collection and processing to detailed statistics about the data. Kindly remind that the usage of Daily Volumetric Video Dataset should be based on a proper cite of this paper.</p>
 <table style="border: 0;">
     <tr>
       <td width=17% style="border: 0;">
-        <img src="images/paper_teaser.gif">
+        <img src="demo2.png">
       </td>
       <td width=75% style="border: 0;">
-        <i>Yili Jin*, Junhua Liu*, Fangxin Wang, Shuguang Cui.</i><br>
-        Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study<br>
-        ACM Multimedia, 2022.<br>
-        <a href="https://arxiv.org/abs/2208.04079">[arXiv]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a>
+        <i>Kaiyuan Hu, Yili Jin, Haowen Yang, Junhua Liu, Fangxin Wang
+          SSE and FNii, The Chinese University of Hong Kong, Shenzhen
+          Versee Inc. Peng Cheng Laborator</i><br>
+          FNii-DVVD: A Volumetric Video Dataset for Daily Scenarios<br>
+          2023.<br>
+        <!-- <a href="https://arxiv.org/abs/2208.04079">[arXiv]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a> -->
       </td>
   </tr>
 </table>
@@ -126,12 +129,12 @@
 </pre>
 </div>
 
-<h2>Videos</h2>
-<p>We collect videos from YouTube, and the following table shows the URL and content of the videos, where the full URL is the concatenation of "www.youtu.be/" and the string listed in the table.</p>
+<h2>Volumetric Videos</h2>
+<p>Here is a index of content of the dataset</p>
 <ul>
 </ul>
-<img src="table1.png">
-<p align='center'>Table 2: Information of videos</p>
+<img src="Content.png">
+<p align='center'>Table 2: Index of Content</p>
 
       </div>
     </div>

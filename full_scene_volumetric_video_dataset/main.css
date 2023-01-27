@@ -5,6 +5,8 @@ body {
     margin: 0;
     font-family: sans-serif;
     font-weight: 300;
+    --theme-color: #322f78;
+    --theme-color-light: rgb(89, 85, 150);
 }
 
 .main .highlight{
@@ -115,7 +117,7 @@ h4 {
 }
 
 .topnav {
-  background-color: #0277BD;
+  background-color: var(--theme-color);
   overflow: hidden;
   z-index: 2;
   line-height: 1;
@@ -152,120 +154,15 @@ h4 {
   font-size: 24px;
 }
 
-#challenge_banner {
-  top: 42px;
+#challenge_banner, #download_banner, #extended_banner, #extras_banner, #news_banner, #factsfigures_banner, #team_banner, #explore_banner {
+  top: 48px;
   left: 0px;
-  height:50px;
+  height:30px;
   width:100%;
   position: fixed;
-  background-color: #0277BD;
+  /* background-color: var(--theme-color); */
   color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/challenge.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-#download_banner {
-  top: 42px;
-  left: 0px;
-  height:50px;
-  width:100%;
-  position: fixed;
-  background-color: #0277BD;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/download.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-#extended_banner {
-  top: 42px;
-  left: 0px;
-  height:50px;
-  width:100%;
-  position: fixed;
-  background-color: #0277BD;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/extended.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-#extras_banner {
-  top: 42px;
-  left: 0px;
-  height:50px;
-  width:100%;
-  position: fixed;
-  background-color: #0277BD;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/extras.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-#news_banner {
-  top: 42px;
-  left: 0px;
-  height:50px;
-  width:100%;
-  position: fixed;
-  background-color: #0277BD;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/news.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-#factsfigures_banner {
-  top: 42px;
-  left: 0px;
-  height:50px;
-  width:100%;
-  position: fixed;
-  background-color: #0277BD;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/factsfigures.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-#team_banner {
-  top: 42px;
-  left: 0px;
-  height:50px;
-  width:100%;
-  position: fixed;
-  background-color: #0277BD;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/team.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-#explore_banner {
-  top: 42px;
-  left: 0px;
-  height:50px;
-  width:100%;
-  position: fixed;
-  background-color: #0277BD;
-  color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(#0277BD, white), url(images/explore.jpg);
+  background-image: linear-gradient(var(--theme-color), #322f7800), url(images/challenge.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,14 +173,14 @@ h4 {
     padding: 50px 40px 40px 40px;
     height: 100%;
     position: fixed;
-    top: 42px;
+    top: 48px;
     width: 100%;
     overflow: auto;
 }
 
 .active {
-  background-color: #ddd;
-  color: black !important;
+  background-color: var(--theme-color-light);
+  /* color: black !important; */
 }
 
 .main th, .main td {
