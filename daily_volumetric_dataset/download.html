@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="main.js" type="text/javascript"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JM2CPK6QLP');
+
+    function toggle_view(subset) {
+      const menu = document.getElementById("seg_" + subset + "_menu");
+      if (menu.style.display === "none") {
+        document.getElementById("seg_train_menu").style.display = "none";
+        document.getElementById("seg_validation_menu").style.display = "none";
+        document.getElementById("seg_test_menu").style.display = "none";
+
+        document.getElementById("seg_train_button").classList.remove("hovered");
+        document.getElementById("seg_validation_button").classList.remove("hovered");
+        document.getElementById("seg_test_button").classList.remove("hovered");
+
+        document.getElementById("seg_" + subset + "_button").classList.add("hovered");
+        menu.style.display = "block";
+      } else {
+        document.getElementById("seg_" + subset + "_button").classList.remove("hovered");
+        menu.style.display = "none";
+      }
+    }
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>VR Behavior Dataset - Download</title>
+</head>
+<body onload="mainDivResize('download')" onresize="mainDivResize()">
+<div class="topnav" id="myTopnav">
+  <a id="100" href="index.html" class="title">VR Behavior Dataset</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="explore.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+</div>
+<div class="main" id="main">
+  <div id="download_banner">
+  </div>
+  <div style='max-width: 900px; margin: 0 auto;'>
+    <br>
+
+    Trouble downloading the dataset? <a href="mailto:junhualiu@link.cuhk.edu.cn">Let us know</a>.
+    <h3>Download the dataset</h3>
+    Before the downloading, please make sure you have read and agree with the Terms of Use of the Head and Gaze VR Behavior Database.
+    <br><br>
+    
+    Download our dataset from <a href="https://drive.google.com/drive/folders/1oKwhUw4FqmW_MKXJvuW7qKY6exx0QeQG?usp=sharing">Google Drive </a><a href="https://drive.google.com/drive/folders/1oKwhUw4FqmW_MKXJvuW7qKY6exx0QeQG?usp=sharing">Aliyun</a>
+    <br>
+    Download our video segments from Google Drive<a href="https://drive.google.com/drive/folders/1oKwhUw4FqmW_MKXJvuW7qKY6exx0QeQG?usp=sharing"> Aliyun</a>
+    <br><br>
+    Please notice that each video contains 58 seconds as video content and other 2 seconds as freezing frames between two videos. In video 18, since the last 13 seconds are black and meaningful, only tracking data within 0-45 seconds is collected.
+    <br><br>
+    Data here is preprint version, not the final version. We will release the final version in October. Thank for your understanding.
+  </div>
+</div>
+</body>
+</html>

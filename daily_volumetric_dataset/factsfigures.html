@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JM2CPK6QLP');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VR Behavior Dataset - Description</title>
+  </head>
+  <body onload="mainDivResize('factsfigures')" onresize="mainDivResize()">
+    <style>
+      /*************************************
+       The box that contain BibTeX code
+       *************************************/
+      div.noshow { display: none; }
+      div.bibtex {
+        margin-right: 0%;
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+        border: 1px solid silver;
+        padding: 0em 1em;
+        background: #ffffee;
+      }
+      div.bibtex pre { font-size: 90%; overflow: auto;  width: 100%; padding: 0em 0em;}
+    </style>
+    <script type="text/javascript">
+        // Toggle Display of BibTeX
+        function toggleBibtex(articleid) {
+            var bib = document.getElementById('bib_'+articleid);
+            if (bib) {
+                if(bib.className.indexOf('bibtex') != -1) {
+                    bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+                }
+            } else {
+                return;
+            }
+        }
+      </script>
+    <div class="topnav" id="myTopnav">
+      <a id="100" href="index.html" class="title">VR behavior Dataset</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="explore.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+    </div>
+    <div class="main" id ="main">
+      <div id="factsfigures_banner">
+      </div>
+      <div style='max-width: 900px; margin: 0 auto;'>
+        <h2>Overview of VR Behavior Dataset</h2>
+<div>
+  <video style="width:100%" loop muted controls autoplay>
+    <source src="images/dataset_example.mp4" type="video/mp4">
+  </video>
+  <p style="font-size: 12px"><i>Sample video sequence themed Spotlight stories. The above video contains music. You can click the video to unmute it.</i></p>
+</div>
+</br>
+<p>The Head and Gaze VR Behavior Dataset is a large-scale dataset containing both the head motion and eye gaze information.</p>
+<ul>
+<li>It contains nearly 20 million pieces of head and gaze tracking data, represented as coordinate and quaternion along with corresponding images.</li>
+<li>The data sequences are captured among 100 users with a high sampling frequency 120Hz. </li>
+<li>It provides 27 videos, which have a rich diversity based on three technique metrics: camera motion, video quality, and the dispersion of region of interest (ROI).</li>
+</ul>
+<p>Our dataset can support many tasks in 360° videos, for example:</p>
+<ul>
+<li>360° Video Streaming</li>
+<li>User Identification</li>
+<li>Psycho Analysis</li>
+<li>Video Recommdentation</li>
+</ul>
+
+<h2>Other Dataset</h2>
+<p style="margin-block-end: 7px;">Here are disparities between our dataset and exist several datasets that provide head movement tracks of users. <br> Our dataset outperforms on the length of dataset, number of participants and frequency. <br> Our dataset have both head and gaze data and more abundent diversity of contents.</p>
+<img src="table2.png">
+<p align='center'>Table 1: Existing datasets.</p>
+<h2>Publications</h2>
+<p style="margin-block-end: 7px;">The following paper describes VR Behavior dataset in depth: from the data processing to detailed statistics about the data. If you use the VR Behavior dataset in your work, please cite this article.</p>
+<table style="border: 0;">
+    <tr>
+      <td width=17% style="border: 0;">
+        <img src="images/paper_teaser.gif">
+      </td>
+      <td width=75% style="border: 0;">
+        <i>Yili Jin*, Junhua Liu*, Fangxin Wang, Shuguang Cui.</i><br>
+        Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study<br>
+        ACM Multimedia, 2022.<br>
+        <a href="https://arxiv.org/abs/2208.04079">[arXiv]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a>
+      </td>
+  </tr>
+</table>
+<div id="bib_DanceGen" class="bibtex noshow">
+<pre>
+@inproceedings{vrdataset,
+  author = {Yili Jin and Junhua Liu and Fangxin Wang and Shuguang Cui},
+  title = {Where Are You Looking?: A Large-Scale Dataset of Head and Gaze Behavior for 360-Degree Videos and a Pilot Study},
+  booktitle = {{MM} '22: Proceedings of the 30th ACM International Conference on Multimedia, Lisboa, Portugal, October 10 - 14, 2022},
+  publisher = {{ACM}},
+  year = {2022},
+  doi = {10.1145/3503161.3548200}
+}
+</pre>
+</div>
+
+<h2>Videos</h2>
+<p>We collect videos from YouTube, and the following table shows the URL and content of the videos, where the full URL is the concatenation of "www.youtu.be/" and the string listed in the table.</p>
+<ul>
+</ul>
+<img src="table1.png">
+<p align='center'>Table 2: Information of videos</p>
+
+      </div>
+    </div>
+  </body>
+</html>
