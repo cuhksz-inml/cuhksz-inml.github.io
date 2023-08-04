@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JM2CPK6QLP');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full Scene Volumetric Video Dataset - Description</title>
+  </head>
+  <body onload="mainDivResize('factsfigures')" onresize="mainDivResize()">
+    <style>
+      /*************************************
+       The box that contain BibTeX code
+       *************************************/
+      div.noshow { display: none; }
+      div.bibtex {
+        margin-right: 0%;
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+        border: 1px solid silver;
+        padding: 0em 1em;
+        background: #ffffee;
+      }
+      div.bibtex pre { font-size: 90%; overflow: auto;  width: 100%; padding: 0em 0em;}
+    </style>
+    <script type="text/javascript">
+        // Toggle Display of BibTeX
+        function toggleBibtex(articleid) {
+            var bib = document.getElementById('bib_'+articleid);
+            if (bib) {
+                if(bib.className.indexOf('bibtex') != -1) {
+                    bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+                }
+            } else {
+                return;
+            }
+        }
+      </script>
+    <div class="topnav" id="myTopnav">
+      <a id="100" href="index.html" class="title">FSVVD - Full Scene Volumetric Video Dataset</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="explore.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+    </div>
+    <div class="main" id ="main">
+      <div id="factsfigures_banner">
+      </div>
+      <div style='max-width: 900px; margin: 0 auto;'>
+        <h2>Overview of Full Scene Volumetric Video Dataset </h2>
+<div>
+  <img src="cover.png"/>
+  <p style="font-size: 12px"><i>Figure 1: Sample frames of the released dataset sequence.</i></p>
+</div>
+</br>
+<p>The Full Scene Volumetric Video Dataset is the first dataset of volumetric videos depicting the interaction of people in real-life scenarios with external scenes.</p>
+<ul>
+<li>It contains 500GB+ of volumetric video data, added up to 10000+ frames.</li>
+<li>The data sequences are captured using Azure Kinect RGBD cameras and has been finely post-processed. </li>
+<li>The dataset has a rich diversity of human-human and human-scene interactions under 4 dimensions.</li>
+</ul>
+<p>Our dataset can support many research tasks in volumetric video compression, streaming and other areas, for example:</p>
+<ul>
+<li>Virtual & Augmented Reality</li>
+<li>Social Interaction</li>
+<li>Healthcare</li>
+<li>AI Systems</li>
+</ul>
+
+<h2>Other Dataset</h2>
+<p style="margin-block-end: 7px;">Here are disparities between our dataset and exist several datasets that provide head movement tracks of users. 
+  <br> Our dataset is the first that contains surrounding environment and human-environment interaction.
+<img src="compare.png">
+<p align='center'>Table 1: Existing datasets.</p>
+
+
+<h2>Publications</h2>
+<p style="margin-block-end: 7px;">The following paper describes in depth: from the data collection and processing to detailed statistics about the data. Kindly remind that the usage of Full Scene Volumetric Video Dataset should be based on a proper cite of this paper.</p>
+<table style="border: 0;">
+    <tr>
+      <td width=17% style="border: 0;">
+        <img src="demo2.png">
+      </td>
+      <td width=75% style="border: 0;">
+        <i>Kaiyuan Hu, Yili Jin, Haowen Yang, Junhua Liu, Fangxin Wang
+          SSE and FNii, The Chinese University of Hong Kong, Shenzhen
+          Versee Inc. Peng Cheng Laborator</i><br>
+          FSVVD: A Dataset of Full Scene Volumetric Video<br>
+          2023.<br>
+        <!-- <a href="https://arxiv.org/abs/2208.04079">[arXiv]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a> -->
+      </td>
+  </tr>
+</table>
+
+<h2>Volumetric Videos</h2>
+<p>Here is a index of content of the dataset</p>
+<ul>
+</ul>
+<img src="content.png">
+<p align='center'>Table 2: Index of Content</p>
+
+      </div>
+    </div>
+  </body>
+</html>

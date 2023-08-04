@@ -1,0 +1,67 @@
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-item {
+    min-width: 400vh;
+    background: url("./cover.png") repeat-x center center; /* 什么图片都可以*/
+    transform: translateX(-200px);
+    background-size: cover;
+    /*animation-delay: 2s;!*延迟2s在进行滚动*!*/
+    -webkit-animation: 50s scrollLeft linear infinite normal;/* 3s持续滚动图片*/
+    animation: 50s scrollLeft linear infinite normal;
+    /*-webkit-animation: 4s scrollUpAndPause linear infinite normal;*/ /* 每停3s滚动一次*/
+    /*animation: 4s scrollUpAndPause linear infinite normal;*/
+}
+
+@-webkit-keyframes scrollLeft {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-400vh);
+        transform: translateX(-400vh);
+    }
+}
+
+@-moz-keyframes scrollLeft {
+    0% {
+        -moz-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -moz-transform: translateX(-400vh);
+        transform: translateX(-400vh);
+    }
+}
+
+@-o-keyframes scrollLeft {
+    0% {
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -o-transform: translateX(-400vh);
+        transform: translateX(-400vh);
+    }
+}
+
+@keyframes scrollLeft {
+    0% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-400vh);
+        -moz-transform: translateX(-400vh);
+        -o-transform: translateX(-400vh);
+        transform: translateX(-400vh);
+    }
+}
